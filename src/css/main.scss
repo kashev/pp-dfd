@@ -12,9 +12,14 @@
   main.scss
 */
 
-/* IMPORT BOURBON SASS LIBRARY */
+/*
+ * IMPORTS
+ */
+/* BOURBON SASS LIBRARY */
 @import "bourbon/bourbon";
 
 /* RESET */
-@import "reset.css"
+@import "reset.css";
 
+/* FRIES */
+@import "fries.holo-dark.min.css"; 

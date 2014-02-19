@@ -19,7 +19,8 @@ module.exports = function(grunt) {
   };
   var css_files  = {
     'dist/css/main.css' : 'src/css/main.scss',
-    'dist/css/reset.css' : 'src/css/reset.css'
+    'dist/css/reset.css' : 'src/css/reset.css',
+    'dist/css/fries.holo-dark.min.css' : 'src/css/fries.holo-dark.min.css'
   };
   var js_files   = {
     'dist/js/main.js' : 'src/js/main.js'
