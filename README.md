@@ -24,7 +24,7 @@ and Erin:
 > **Erin** is a 27 (soon to be 28) year old female who currently lives in Boston, Massachusetts. She has worked at a strategic branding firm, where she is now an art director and second in charge, for almost two years. Prior to moving to Boston, Erin spent some time working professionally in the Atlanta, Georgia area, her hometown (although she later moved to Florida with her parents). She graduated with a degree in graphic design and illustration in 2008 from a major art school in the southeastern United States. Erin is significantly younger than her four other siblings, so much so that she is only a few years older than one of her nephews. Erin loves music, which is a good thing because her long-term boyfriend plays tuba in a band. Erin’s cat, Frankly, has his own Facebook page and has been known to Skype with other pet friends across the country. Erin’s favorite color is seafoam green.
 
 ## The App
-The app itself is (TODO)
+The app itself is called SoCo: Social Color.
 
 ## Instructions
 Building this code from source requires `node`, `npm`, and `ruby`.
