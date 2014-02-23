@@ -15,7 +15,8 @@
 /* GRUNT CONFIGURATION */
 module.exports = function(grunt) {
   var html_files = {
-    'dist/index.html' : 'src/index.html'
+    'dist/index.html' : 'src/index.html',
+    'dist/camera.html' : 'src/camera.html'
   };
   var css_files  = {
     'dist/css/main.css' : 'src/css/main.scss',
@@ -139,7 +140,7 @@ module.exports = function(grunt) {
         livereload : true,
       },
       html : {
-        files : ['src/index.html'],
+        files : ['src/*.html'],
         tasks : ['copy:dev'],
       },
       js : {
