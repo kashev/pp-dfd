@@ -23,7 +23,8 @@ module.exports = function(grunt) {
     'dist/css/fries.holo-dark.min.css' : 'src/css/fries.holo-dark.min.css'
   };
   var js_files   = {
-    'dist/js/main.js' : 'src/js/main.js'
+    'dist/js/main.js' : 'src/js/main.js',
+    'dist/js/lib/fries.min.js' : 'src/js/lib/fries.min.js'
   };
   
   var img_copy =  {
@@ -32,6 +33,14 @@ module.exports = function(grunt) {
     cwd: 'src/img',
     src: ['**/*'],
     dest: 'dist/img/'
+  };
+
+  var font_copy = {
+    flatten : false,
+    expand : true,
+    cwd : 'src/fonts',
+    src : ['**/*'],
+    dest : 'dist/fonts'
   };
 
   grunt.initConfig({
@@ -94,12 +103,14 @@ module.exports = function(grunt) {
         files: [
           html_files,
           js_files,
-          img_copy
+          img_copy,
+          font_copy
         ]
       },
       dist : {
         files: [
-          img_copy
+          img_copy,
+          font_copy
         ]
       }
     },

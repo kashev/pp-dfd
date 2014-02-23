@@ -25,23 +25,66 @@
   <meta name="mobile-web-app-capable" content="yes">
   <!-- END REQUIRED FRIES TAGS -->
 
-  <title>SoCo</title>
+  <title>Social Color</title>
   
   <link rel="shortcut icon" href="favicon.png"/>
   <!-- CSS - Links Reset, Fries CSS -->
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css"> 
 
 </head>
 <body>
-  <!-- Script -->
-  <!-- jQuery -->
-  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-  <!-- SoCo JS -->
-  <script src="js/main.js"></script>
-  
 
   <!-- BEGIN CONTENT -->
-  <p>Coming Soon</p>
+  <!-- All your pages must be wrapped in a div.page so that stack.js works -->
+  <div class="page">
 
+    <header class="action-bar fixed-top">
+      <a href="javascript: void(0);" class="app-icon action" data-ignore="true">
+        <i class="icon-mouse"></i>
+      </a>
+
+      <h1 class="title">SoCo</h1>
+
+      <!-- ACTION BUTTONS -->
+      <ul class="actions pull-right">
+        <!-- USER ACCOUNT -->
+        <li><a href="javascript: void(0);" class="action" title="User Account">
+          <i class="icon-person"></i>
+        </a></li>
+
+        <!-- SETTINGS -->
+        <li><a href="javascript: void(0);" class="action" title="Settings">
+          <i class="icon-settings"></i>
+        </a></li>
+
+        <!-- ABOUT APP -->
+        <li><a href="javascript: void(0);" class="action" title="Information">
+          <i class="icon-information"></i>
+        </a></li>
+      </ul>
+
+    </header> <!--  END ACTION BAR -->
+    
+    <!-- CONTENT -->
+    <div class="content">
+      <ul class="list inset">
+        <li class="list-divider">SoCo: Social Color</li>
+        <li class="list-item-single-line">Test</li>
+      </ul>
+    </div>
+
+    <div class="dialogs">
+      <!-- This is a requried container for your dialogs. All dialogs that you want to display in this page go here -->
+    </div>
+
+  </div> <!-- END PAGE -->
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <!-- Fries -->
+  <script src="js/lib/fries.min.js"></script>
+  <!-- SoCo JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
