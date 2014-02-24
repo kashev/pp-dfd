@@ -9,7 +9,7 @@
   A Project for ARTD 313 @ UIUC, Sp 2014
   proj2b - dalmia3
 
-  about.html
+  post-picture.html
 -->
 
 <!doctype html>
@@ -31,15 +31,19 @@
   <!-- CSS - Links Reset, Fries CSS -->
   <link rel="stylesheet" type="text/css" href="css/main.css"> 
 
+  <!-- COLOR PICKER -->
+  <link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
+  <script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+
 </head>
 <body>
 
   <!-- BEGIN CONTENT -->
   <!-- All your pages must be wrapped in a div.page so that stack.js works -->
   <div class="page">
-    
-    <header class="action-bar fixed-top">
 
+    <header class="action-bar fixed-top">
+      
       <!-- ICON -->
       <a href="index.html" 
          class="app-icon action" 
@@ -84,17 +88,19 @@
                data-transition="push">
           <i class="icon-information"></i>
         </a></li>
-        
+
       </ul>
 
     </header> <!--  END ACTION BAR -->
     
     <!-- CONTENT -->
     <div class="content">
-      
-      <img class="circle" src="img/kashev.jpg" alt="Kashev Dalmia">
 
-    </div> <!-- END CONTENT -->
+      <div class="picture-view">
+        <img class="camera-view under" src="img/alaska.jpg" alt="A Fake Picture Taken">
+      </div>
+    
+    </div><!-- END CONTENT -->
 
     <div class="dialogs">
       <!-- This is a requried container for your dialogs. All dialogs that you want to display in this page go here -->

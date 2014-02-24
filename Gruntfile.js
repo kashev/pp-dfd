@@ -15,11 +15,12 @@
 /* GRUNT CONFIGURATION */
 module.exports = function(grunt) {
   var html_files = {
-    'dist/index.html'    : 'src/index.html',
-    'dist/camera.html'   : 'src/camera.html',
-    'dist/settings.html' : 'src/settings.html',
-    'dist/user.html'     : 'src/user.html',
-    'dist/about.html'    : 'src/about.html'
+    'dist/index.html'        : 'src/index.html',
+    'dist/camera.html'       : 'src/camera.html',
+    'dist/settings.html'     : 'src/settings.html',
+    'dist/user.html'         : 'src/user.html',
+    'dist/about.html'        : 'src/about.html',
+    'dist/post-picture.html' : 'src/post-picture.html'
   };
   var css_files  = {
     'dist/css/main.css' : 'src/css/main.scss',
@@ -33,18 +34,26 @@ module.exports = function(grunt) {
   
   var img_copy =  {
     flatten : true,
-    expand : true,
-    cwd: 'src/img',
-    src: ['**/*'],
-    dest: 'dist/img/'
+    expand  : true,
+    cwd     : 'src/img',
+    src     : ['**/*'],
+    dest    : 'dist/img/'
   };
 
   var font_copy = {
     flatten : false,
-    expand : true,
-    cwd : 'src/fonts',
-    src : ['**/*'],
-    dest : 'dist/fonts'
+    expand  : true,
+    cwd     : 'src/fonts',
+    src     : ['**/*'],
+    dest    : 'dist/fonts'
+  };
+
+  var colorpicker_copy = {
+    flatten : false,
+    expand  : true,
+    cwd     : 'src/colorpicker',
+    src     : ['**/*'],
+    dest    : 'dist/colorpicker'
   };
 
   grunt.initConfig({
@@ -109,13 +118,15 @@ module.exports = function(grunt) {
           html_files,
           js_files,
           img_copy,
-          font_copy
+          font_copy,
+          colorpicker_copy
         ]
       },
       dist : {
         files: [
           img_copy,
-          font_copy
+          font_copy,
+          colorpicker_copy
         ]
       }
     },
