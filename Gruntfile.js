@@ -16,7 +16,10 @@
 module.exports = function(grunt) {
   var html_files = {
     'dist/index.html' : 'src/index.html',
-    'dist/camera.html' : 'src/camera.html'
+    'dist/camera.html' : 'src/camera.html',
+    'dist/settings.html' : 'src/settings.html',
+    'dist/user.html' : 'src/user.html',
+    'dist/about.html' : 'src/about.html'
   };
   var css_files  = {
     'dist/css/main.css' : 'src/css/main.scss',
