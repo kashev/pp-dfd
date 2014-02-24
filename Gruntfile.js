@@ -28,7 +28,8 @@ module.exports = function(grunt) {
     'dist/css/fries.holo-dark.min.css' : 'src/css/fries.holo-dark.min.css'
   };
   var js_files   = {
-    'dist/js/main.js' : 'src/js/main.js',
+    'dist/js/main.js'          : 'src/js/main.js',
+    'dist/js/post-picture.js'  : 'src/js/post-picture.js',
     'dist/js/lib/fries.min.js' : 'src/js/lib/fries.min.js'
   };
   
@@ -56,18 +57,31 @@ module.exports = function(grunt) {
     dest    : 'dist/colorpicker'
   };
 
+  /*
+   * GRUNT CONFIGURATION
+   */
   grunt.initConfig({
+    
+    /*
+     * CONNECT
+     *   live development server
+     */
     connect: {
       server: {
         options: {
           base : 'dist',
           livereload : true,
-          hostname: '0.0.0.0'
+          hostname: '0.0.0.0'   // uncomment for server available on LAN
+          // hostname : localhost // uncomment for local only operation
         },
       }
     },
-    // JS Hint Options
-    jshint: {                                  // task
+
+    /*
+     * JSHINT
+     *   making sure I don't write godawful JavaScript
+     */
+    jshint: {
       src: ['Gruntfile.js', 'src/js/main.js'],
       options: {
         curly : true,
@@ -92,10 +106,14 @@ module.exports = function(grunt) {
         }
       }
     },
-    // Sass options
-    sass: {                              // Task
-      dev : {                            // Target
-        options : {                      // Target options
+
+    /*
+     * SASS
+     *   the css preprocessor of choice
+     */
+    sass: {
+      dev : {
+        options : {
           style : 'expanded',
           trace : true,
           unixNewlines : true
@@ -111,7 +129,11 @@ module.exports = function(grunt) {
         files : css_files
       }
     },
-    // copy options
+
+    /*
+     * COPY
+     *   for moving things around
+     */
     copy : {
       dev : {
         files: [
@@ -130,7 +152,11 @@ module.exports = function(grunt) {
         ]
       }
     },
-    // htmlmin - for dist
+
+    /*
+     * HTMLMIN
+     *   for production minifying of HTML
+     */
     htmlmin : {
       dist : {
         options : {
@@ -140,7 +166,11 @@ module.exports = function(grunt) {
         files : html_files
       }
     },
-    // uglify - for dist
+
+    /*
+     * UGLIFY
+     *   for production minifying of JavaScript
+     */
     uglify : {
       dist : {
         files : js_files,
@@ -150,6 +180,11 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    /*
+     * WATCH
+     *   for live reload server
+     */
     watch : {
       options : {
         livereload : true,
@@ -174,7 +209,7 @@ module.exports = function(grunt) {
   });
 
   /*
-   * Load Tasks
+   * LOAD GRUNT TASKS
    */
   // Load JSHint Task
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -193,6 +228,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
 
+  /*
+   * REGISTER GRUNT TASKS
+   */
   // Default task is dev. dist builds deploy folder.
   grunt.registerTask('default', [
     'jshint',
