@@ -15,11 +15,11 @@
 /* GRUNT CONFIGURATION */
 module.exports = function(grunt) {
   var html_files = {
-    'dist/index.html' : 'src/index.html',
-    'dist/camera.html' : 'src/camera.html',
+    'dist/index.html'    : 'src/index.html',
+    'dist/camera.html'   : 'src/camera.html',
     'dist/settings.html' : 'src/settings.html',
-    'dist/user.html' : 'src/user.html',
-    'dist/about.html' : 'src/about.html'
+    'dist/user.html'     : 'src/user.html',
+    'dist/about.html'    : 'src/about.html'
   };
   var css_files  = {
     'dist/css/main.css' : 'src/css/main.scss',
@@ -162,7 +162,9 @@ module.exports = function(grunt) {
     }
   });
 
-  /* Load Tasks */
+  /*
+   * Load Tasks
+   */
   // Load JSHint Task
   grunt.loadNpmTasks('grunt-contrib-jshint');
   // Load Sass Compilation Task
