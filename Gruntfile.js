@@ -50,6 +50,7 @@ module.exports = function(grunt) {
         options: {
           base : 'dist',
           livereload : true,
+          hostname: '0.0.0.0'
         },
       }
     },
