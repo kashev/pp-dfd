@@ -6,3 +6,4 @@ dist/*
 src/css/bourbon/*
 src/fries-master/*
 
+**/Thumbs.db
