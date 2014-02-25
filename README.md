@@ -24,20 +24,21 @@ and Erin:
 > **Erin** is a 27 (soon to be 28) year old female who currently lives in Boston, Massachusetts. She has worked at a strategic branding firm, where she is now an art director and second in charge, for almost two years. Prior to moving to Boston, Erin spent some time working professionally in the Atlanta, Georgia area, her hometown (although she later moved to Florida with her parents). She graduated with a degree in graphic design and illustration in 2008 from a major art school in the southeastern United States. Erin is significantly younger than her four other siblings, so much so that she is only a few years older than one of her nephews. Erin loves music, which is a good thing because her long-term boyfriend plays tuba in a band. Erin’s cat, Frankly, has his own Facebook page and has been known to Skype with other pet friends across the country. Erin’s favorite color is seafoam green.
 
 ## The App
-The app itself is called SoCo: Social Color.
+The app itself is called SoCo: Social Color. More details about the application are in `process/process.pdf`.
 
 ## Instructions
 Building this code from source requires `node`, `npm`, and `ruby`.
 
-In the project root, run `npm install` to install all Javascript dependencies. Run `gem install sass` to be able to compile Sass files. Install `bourbon` by running `gem install bourbon`, then install to the project by running `bourbon install` inside of `src/css/`. Build by typing `grunt` for the development, unminified version or `grunt dist` for a minified version. This will compile `sass` files, `jshint` lint all Javascript files, and move deployable code to `dist/`. Run `grunt server` for live updating dev server at `http://localhost:8000`.
+In the project root, run `npm install` to install all Javascript dependencies. Run `gem install sass` to be able to compile Sass files. Install `bourbon` & `neat` by running `gem install bourbon neat`, then install to the project by running `bourbon install` & `neat install` inside of `src/css/`. Build by typing `grunt` for the development, unminified version or `grunt dist` for a minified version. This will compile `sass` files, `jshint` lint all Javascript files, and move deployable code to `dist/`. Run `grunt server` for live updating dev server at `http://localhost:8000`. Serving is set to be on `0.0.0.0` so that testing can be done on other devices (an Android phone) by connecting to the IP of the host computer on port `8000`.
 
 ## Thanks
 This project is possible thanks to the work on the following projects:
 - [Node](http://nodejs.org/)
 - [Grunt](http://gruntjs.com/)
 - [jQuery](http://jquery.com/)
+- [Fries](http://getfri.es/)
 - [Sass](http://sass-lang.com/)
 - [Bourbon](http://bourbon.io/)
-- [Fries](http://getfri.es/)
+- [Neat](http://neat.bourbon.io/)
 
 Thanks to Professor Brad Tober, and Isaac DuPree for guidance.
