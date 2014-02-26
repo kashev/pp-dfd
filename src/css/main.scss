@@ -44,7 +44,7 @@ $column : 2;
  */
 
 /* COLOR PALETTE */
-$background-color : #444; /* #FFF; */
+$background-color : #FFF;
 $text-color       : #111;
 
 /* ALASKA PALETTE */
@@ -60,27 +60,50 @@ $alaska-4 : #67956E;
 // default grid is 12
 .grid {
   @include outer-container;
-  .half {
-    @include span-columns(6);
-  }
-  .third {
-    @include span-columns(4);
-  }
-  .two-thirds {
-    @include span-columns(8);
-  }
-  .fourth {
-    @include span-columns(3);
-  }
+  .half       { @include span-columns(6); }
+  .third      { @include span-columns(4); }
+  .two-thirds { @include span-columns(8); }
+  .fourth     { @include span-columns(3); }
 }
 
 /*
  * TAG STYLING
  */
 
+html {
+  font-size: 62.5%;
+}
+
 img {
   max-width  : 100%;
   max-height : 100%;
+}
+
+h1 {
+  font-weight: 100;
+  letter-spacing : 0.1rem;
+  font-size: 3.0rem;
+  text-align: center;
+  line-height: 3.1rem;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 2.0rem;
+  margin: 1.0rem 0;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0.7rem 0;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 100;
+  text-align: justify;
 }
 
 
@@ -100,6 +123,20 @@ img {
 
 .circle {
   @include border-radius(50%);
+}
+
+.container {
+  width: 20%;
+  padding: 1%;
+}
+
+.spacing {
+  padding: 1.0rem;
+  margin: 1.0rem;
+}
+
+.margining {
+  margin: 3%;
 }
 
 /*
