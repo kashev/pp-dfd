@@ -17,18 +17,34 @@
 
 $(document).ready(function(){
 
-$('#colorSelector').ColorPicker({
-  onShow: function (colpkr) {
-    $(colpkr).fadeIn(500);
-    return false;
-  },
-  onHide: function (colpkr) {
-    $(colpkr).fadeOut(500);
-    return false;
-  },
-  onChange: function (hsb, hex, rgb) {
-    $('#colorSelector div').css('backgroundColor', '#' + hex);
-  }
-});
+/*
+ * initColorPicker()
+ *   given a selector and an initial color, turns that element into a ColorPicker.
+ */
+function initColorPicker (selector, initial_color) {
+  $(selector).ColorPicker({
+    color : initial_color,
+    onShow : function (colpkr) {
+      $(colpkr).fadeIn(500);
+      return false;
+    },
+    onHide : function (colpkr) {
+      $(colpkr).fadeOut(500);
+      return false;
+    },
+    onChange : function (hsb, hex, rgb) {
+      $(selector).css('backgroundColor', '#' + hex);
+    }
+  });
+}
+
+
+/*
+ * SET COLOR PICKER
+ */
+initColorPicker('.color-1', '#4F769E');
+initColorPicker('.color-2', '#35372F');
+initColorPicker('.color-3', '#F9F9F9');
+initColorPicker('.color-4', '#67956E');
 
 });

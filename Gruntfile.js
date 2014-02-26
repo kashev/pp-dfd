@@ -58,7 +58,7 @@ module.exports = function(grunt) {
   };
 
   /*
-   * GRUNT CONFIGURATION
+   * GRUNT INITIALIZATION CONFIGURATION
    */
   grunt.initConfig({
     
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
      *   making sure I don't write godawful JavaScript
      */
     jshint: {
-      src: ['Gruntfile.js', 'src/js/main.js'],
+      src: ['Gruntfile.js', 'src/js/main.js', 'src/js/post-picture.js'],
       options: {
         curly : true,
         eqeqeq : true,
@@ -194,7 +194,7 @@ module.exports = function(grunt) {
         tasks : ['copy:dev'],
       },
       js : {
-        files : ['src/js/*.js'],
+        files : ['Gruntfile.js', 'src/js/*.js'],
         tasks : ['jshint', 'copy:dev'],
       },
       css : {
