@@ -16,6 +16,8 @@
  * IMPORTS
  */
 /* BOURBON NEAT SASS LIBRARY */
+$gutter : 0;
+$column : 2;
 @import "bourbon/bourbon";
 @import "neat/neat";
 
@@ -58,8 +60,8 @@ $alaska-4 : #67956E;
 // default grid is 12
 .grid {
   @include outer-container;
-  max-width: 90%;
-  max-height: 90%;
+  max-height : 90%;
+  max-width  : 90%;
   .half {
     @include span-columns(6);
   }
@@ -133,7 +135,7 @@ img {
 
 .palette-view {
   width: 100%;
-  height: 40%;
+  height: 40%; 
   .grid {
     height: 100%;
   }

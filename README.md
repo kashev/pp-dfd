@@ -40,5 +40,7 @@ This project is possible thanks to the work on the following projects:
 - [Sass](http://sass-lang.com/)
 - [Bourbon](http://bourbon.io/)
 - [Neat](http://neat.bourbon.io/)
+- [ColorPicker](http://www.eyecon.ro/colorpicker/)
+- [ColorPicker Mobile](https://github.com/Gautier/jquery-colorpicker-mobile)
 
 Thanks to Professor Brad Tober, and Isaac DuPree for guidance.
