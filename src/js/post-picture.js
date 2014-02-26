@@ -47,4 +47,10 @@ initColorPicker('.color-2', '#35372F');
 initColorPicker('.color-3', '#F9F9F9');
 initColorPicker('.color-4', '#67956E');
 
+$('.picture-view').click(function(){
+  $(this).fadeOut(500);
+  $('.palette-view').css('height', '100%');
+  $('.grid').css('height', '100%');
+});
+
 });

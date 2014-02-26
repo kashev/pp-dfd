@@ -60,8 +60,6 @@ $alaska-4 : #67956E;
 // default grid is 12
 .grid {
   @include outer-container;
-  max-height : 90%;
-  max-width  : 90%;
   .half {
     @include span-columns(6);
   }
