@@ -47,10 +47,25 @@ initColorPicker('.alaska-2', '#35372F');
 initColorPicker('.alaska-3', '#F9F9F9');
 initColorPicker('.alaska-4', '#67956E');
 
-$('.picture-view').click(function(){
-  $(this).fadeOut(500);
+/*
+ * SET BUTTON HANDLERS
+ */
+
+$('#done-button').click(function(){
+  $('.picture-view').fadeOut(500);
   $('.palette-view').css('height', '100%');
-  $('.grid').css('height', '100%');
+
+  $('#font-view').fadeIn(500);
+
+  /* Set New Click Handlers */
+  $('#done-button').off('click');
+  $('#done-button').click(function(){
+    window.location = "/index.html";
+  });
+});
+
+$('#cancel-button').click(function(){
+  window.location = "/index.html";
 });
 
 });
