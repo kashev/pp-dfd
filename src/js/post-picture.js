@@ -52,20 +52,32 @@ initColorPicker('.alaska-4', '#67956E');
  */
 
 $('#done-button').click(function(){
+  $('#font-view').css('visibility', 'visible');
+
   $('.picture-view').fadeOut(500);
   $('.palette-view').css('height', '100%');
-
-  $('#font-view').fadeIn(500);
 
   /* Set New Click Handlers */
   $('#done-button').off('click');
   $('#done-button').click(function(){
     window.location = "/index.html";
   });
+
 });
 
 $('#cancel-button').click(function(){
   window.location = "/index.html";
 });
+
+$('select').change(function() {
+  if( $(this).val() === "Default font" )
+  {
+    $('#preview-text').css('font-family',"");
+  }
+  else
+  {
+    $('#preview-text').css('font-family',$(this).val());
+  }
+}); 
 
 });

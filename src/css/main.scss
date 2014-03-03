@@ -197,6 +197,16 @@ strong {
   width: 100%;
 }
 
+#font-view {
+  z-index: 5;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto
+}
+
 /*
  * Page Specific CSS
  */
