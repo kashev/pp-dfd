@@ -69,7 +69,10 @@ $('#cancel-button').click(function(){
   window.location = "/index.html";
 });
 
-$('select').change(function() {
+/*
+ * FONT PICKER
+ */
+$('#font-picker').change(function() {
   if( $(this).val() === "Default font" )
   {
     $('#preview-text').css('font-family',"");
@@ -78,6 +81,10 @@ $('select').change(function() {
   {
     $('#preview-text').css('font-family',$(this).val());
   }
-}); 
+});
+
+/*
+ * 
+ */
 
 });

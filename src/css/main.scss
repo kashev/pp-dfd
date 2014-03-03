@@ -59,6 +59,7 @@ $bello-2 : #457878;
 $bello-3 : #060606;
 $bello-4 : #ACCCC3;
 
+
 /*
  * NEAT GRID CSS
  */
@@ -150,6 +151,35 @@ strong {
 }
 
 /*
+ * Page Specific CSS
+ */
+.homepage-button {
+  font-size: 2em;
+}
+.list-title {
+  text-align: left;
+  margin: 3%;
+  font-size: 2.0rem;
+  border-bottom : solid 1px $text-color;
+}
+.settings-item {
+  .half {
+    vertical-align: middle;
+    height: 48px;
+    top:50%;
+  }
+  .settings-item-title {
+    font-size: 1.7rem;
+    padding: 12px 0;
+  }
+
+  .input-checkbox-wrapper {
+    height: 48px;
+    padding: 16px 0;
+  }
+}
+
+/*
  * One-Off Classes
  */
 
@@ -207,18 +237,6 @@ strong {
   margin-left: auto
 }
 
-/*
- * Page Specific CSS
- */
-.homepage-button {
-  font-size: 2em;
-}
-.list-title {
-  text-align: left;
-  margin: 3%;
-  font-size: 2.0rem;
-  border-bottom : solid 1px $text-color;
-}
 
 /*
  * CSS For viewing a single palette
@@ -309,3 +327,50 @@ strong {
 .bello-4 {
   background-color : $bello-4;
 }
+
+/*
+ * Icon CSS For User Account Page
+ */
+
+.soco-icon-box {
+  border-radius: 50%;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  font: 0/0 a;
+
+  .soco-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align: middle;
+    height: 90%;
+  }
+}
+
+.soco-icon-box:before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.push-right {
+  padding-left: 30%;
+}
+
+/* ICON COLORS */
+$facebook-color   : #3B5998;
+$googleplus-color : #D14836;
+$pinterest-color  : #CB2027;
+$dribbble-color   : #EA4C89;
+
+#facebook-icon   { background-color : $facebook-color; }
+
+#googleplus-icon { background-color : $googleplus-color; }
+
+#pinterest-icon  { background-color : $pinterest-color; }
+
+#dribbble-icon   { background-color : $dribbble-color; }
