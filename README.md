@@ -32,7 +32,7 @@ More details about the application are in `process/process.pdf`.
 ## Instructions
 Building this code from source requires `node`, `npm`, and `ruby`.
 
-In the project root, run `npm install` to install all Javascript dependencies. Run `gem install sass` to be able to compile Sass files. Install `bourbon` & `neat` by running `gem install bourbon neat`, then install to the project by running `bourbon install` & `neat install` inside of `src/css/`. Build by typing `grunt` for the development, unminified version or `grunt dist` for a minified version. This will compile `sass` files, `jshint` lint all Javascript files, and move deployable code to `dist/`. Run `grunt server` for live updating dev server at `http://localhost:8000`. Serving is set to be on `0.0.0.0` so that testing can be done on other devices (an Android phone) by connecting to the IP of the host computer on port `8000`.
+In the project root, run `npm install` to install all Javascript dependencies. Run `gem install sass` to be able to compile Sass files. Install `bourbon` & `neat` by running `gem install bourbon neat`, then install to the project by running `bourbon install` & `neat install` inside of `src/css/`. Build by typing `grunt` for the development, unminified version or `grunt dist` for a minified version. This will compile `sass` files, `jshint` lint all Javascript files, and move deployable code to `dist/`. Run `grunt server` for live updating dev server at `http://localhost:8000`. Serving is set to be on `0.0.0.0` so that testing can be done on other devices (an Android phone) by connecting to the LAN IP of the host computer on port `8000`.
 
 ## Thanks
 This project is possible thanks to the work on the following projects:
@@ -45,5 +45,6 @@ This project is possible thanks to the work on the following projects:
 - [Neat](http://neat.bourbon.io/)
 - [ColorPicker](http://www.eyecon.ro/colorpicker/)
 - [ColorPicker Mobile](https://github.com/Gautier/jquery-colorpicker-mobile)
+- [Simple Icons](http://simpleicons.org/)
 
 Thanks to Professor Brad Tober, and Isaac DuPree for guidance.
