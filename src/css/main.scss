@@ -53,6 +53,11 @@ $alaska-2 : #35372F;
 $alaska-3 : #F9F9F9;
 $alaska-4 : #67956E;
 
+/* BELLO PALETTE */
+$bello-1 : #DCBF74;
+$bello-2 : #457878;
+$bello-3 : #060606;
+$bello-4 : #ACCCC3;
 
 /*
  * NEAT GRID CSS
@@ -130,8 +135,8 @@ strong {
   @include border-radius(50%);
 }
 
-.container {
-  width: 20%;
+.twenty-container {
+  width: 30%;
   padding: 1%;
 }
 
@@ -152,7 +157,6 @@ strong {
   background-color : $background-color;
   color            : $text-color;
 }
-
 
 .camera-view {
   width: 100%;
@@ -181,19 +185,109 @@ strong {
   }
 }
 
-.color-1 {
+.color {
+  height: 100%;
+}
+
+/*
+ * Page Specific CSS
+ */
+.homepage-button {
+  font-size: 2em;
+}
+.homepage-title {
+  text-align: left;
+  margin: 3%;
+  font-size: 2.0rem;
+  border-bottom : solid 1px $text-color;
+}
+
+/*
+ * CSS For viewing a single palette
+ */
+.single-palette {
+  display      : block;
+  margin-left  : auto;
+  margin-right : auto;
+  text-align   : center;
+
+  position: relative;
+
+  width: 80%;
+  height: 40%;
+  
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+
+  .nav {
+    height : 100%;
+    width  : 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 100%;
+    font-size: 2.0rem;
+    z-index: 1;
+    display: table;
+    overflow: hidden;
+  }
+
+  .pic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top : 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+  .pal {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 80%;
+    height: 40%;
+    .grid {
+      height: 100%;
+    }
+  }
+}
+
+/*
+ * ONE OFF COLOR CLASSES
+ */
+
+.alaska-1 {
   background-color : $alaska-1;
-  height: 100%;
 }
-.color-2 {
+.alaska-2 {
   background-color : $alaska-2;
-  height: 100%;
 }
-.color-3 {
+.alaska-3 {
   background-color : $alaska-3;
-  height: 100%;
 }
-.color-4 {
+.alaska-4 {
   background-color : $alaska-4;
-  height: 100%;
+}
+
+.bello-1 {
+  background-color : $bello-1;
+}
+.bello-2 {
+  background-color : $bello-2;
+}
+.bello-3 {
+  background-color : $bello-3;
+}
+.bello-4 {
+  background-color : $bello-4;
 }

@@ -42,10 +42,10 @@ function initColorPicker (selector, initial_color) {
 /*
  * SET COLOR PICKER
  */
-initColorPicker('.color-1', '#4F769E');
-initColorPicker('.color-2', '#35372F');
-initColorPicker('.color-3', '#F9F9F9');
-initColorPicker('.color-4', '#67956E');
+initColorPicker('.alaska-1', '#4F769E');
+initColorPicker('.alaska-2', '#35372F');
+initColorPicker('.alaska-3', '#F9F9F9');
+initColorPicker('.alaska-4', '#67956E');
 
 $('.picture-view').click(function(){
   $(this).fadeOut(500);
