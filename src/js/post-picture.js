@@ -77,28 +77,28 @@ $('#weight-picker').change(function() {
   if( $(this).val() === "Bold" )
   {
     $('#preview-text').css({
-      'font-family':"",
+      'font-style':"",
       'font-weight':"bold"
     });
   }
   else if ( $(this).val() === "Italic" )
   {
     $('#preview-text').css({
-      'font-family':"italic",
+      'font-style':"italic",
       'font-weight':""
     });
   }
   else if ( $(this).val() === "Bold Italic")
   {
     $('#preview-text').css({
-      'font-family':"italic",
+      'font-style':"italic",
       'font-weight':"bold"
     });
   }
   else
   {
     $('#preview-text').css({
-      'font-family':"",
+      'font-style':"",
       'font-weight':""
     });
   }
@@ -122,7 +122,11 @@ $('#font-picker').change(function() {
     if ( $.inArray($(this).val(), loaded_fonts) < 0 )
     {
       WebFont.load({
-        google : { families : [$(this).val()] },
+        google : { families : [$(this).val(),
+                               $(this).val().concat("b"),
+                               $(this).val().concat("i"),
+                               $(this).val().concat("bi"),
+        ]},
         active : function () {
           // font is now loaded
           loaded_fonts.push($(this).val());
