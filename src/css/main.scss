@@ -241,15 +241,16 @@ strong {
   
   top: 5%;
   position : relative;
-
-  #previw-text {
-    position : absolute;
-    padding: 3% 0;
-    line-height: 200%;
-    max-height: 90%;
-  }
-  #size-picker {
-    width: 100%;
+  #picker-box {
+    #previw-text {
+      position : absolute;
+      padding: 3% 0;
+      line-height: 200%;
+      max-height: 90%;
+    }
+    #size-picker {
+      width: 100%;
+    }
   }
 }
 

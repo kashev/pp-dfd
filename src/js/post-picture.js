@@ -143,8 +143,10 @@ $('#font-picker').change(function() {
  * SIZE PICKER
  */
 $('#size-picker').change(function() {
-  $('#preview-text').css("font-size", $(this).val().concat("px"));
-  $('#preview-text').css("line-height", $(this).val().concat("px"));
+  var fsize = $(this).val().concat("px");
+  $('#size-indicator').text("Size : ".concat(fsize));
+  $('#preview-text').css("font-size", fsize);
+  $('#preview-text').css("line-height", fsize);
 }); 
 
 });
