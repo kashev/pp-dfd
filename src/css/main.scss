@@ -229,34 +229,58 @@ strong {
   width: 100%;
 }
 
-#font-view {
-  // centered
-  display      : block;
-  margin-right : auto;
-  margin-left  : auto;
-  
-  // z-index : 5;
-  visibility: hidden;
-  width: 90%;
-  
-  top: 5%;
-  position : relative;
-  #picker-box {
-    #previw-text {
-      position : absolute;
-      padding: 3% 0;
-      line-height: 200%;
-      max-height: 90%;
-    }
-    #size-picker {
-      width: 100%;
-    }
-    #size-indicator {
-      font-weight: bold;
-    }
-  }
-}
+/*
+ * TYPEFACE PREVIEWER CSS
+ */
+$pickerfontsize : 1.4rem;
+#preview-text {
+  visibility: hidden; // to start
 
+  // centered
+  margin-right : 1%;
+  margin-left  : 1%;
+
+  position : absolute;
+  top: 1%;
+  max-height: 90%;
+  text-align: left;
+}
+#picker-box {
+  visibility: hidden; // to start
+  font-size: 1.6rem;
+  // centered
+  margin-right : 5%;
+  margin-left  : 5%;
+
+  position: absolute;
+  bottom : 20%;
+  width: 90%;
+}
+#size-picker {
+  width: 100%;
+}
+#size-indicator {
+  font-weight: bold;
+  font-size: $pickerfontsize;
+}
+#font-picker {
+  margin: 10px 0;
+  border: 0;
+  font-size: $pickerfontsize;
+  width: 95%;
+  border: 1px solid black;
+  height: $pickerfontsize * 2;
+  left: 0;
+}
+#weight-picker {
+  margin: 10px 0;
+  border: 0;
+  font-size: $pickerfontsize;
+  width: 95%;
+  border: 1px solid black;
+  height: $pickerfontsize * 2;
+  right: 0;
+}
 
 /*
  * CSS For viewing a single palette
@@ -391,5 +415,3 @@ $dribbble-color   : #EA4C89;
 #googleplus-icon { background-color : $googleplus-color; }
 #pinterest-icon  { background-color : $pinterest-color; }
 #dribbble-icon   { background-color : $dribbble-color; }
-
-* { max-height: 999999px }

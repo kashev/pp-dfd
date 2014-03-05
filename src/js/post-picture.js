@@ -51,9 +51,9 @@ initColorPicker('.alaska-4', '#67956E');
 /*
  * SET BUTTON HANDLERS
  */
-
 $('#done-button').click(function(){
-  $('#font-view').css('visibility', 'visible');
+  $('#preview-text').css('visibility', 'visible');
+  $('#picker-box').css('visibility', 'visible');
 
   $('.picture-view').fadeOut(500);
   $('.palette-view').css('height', '100%');
