@@ -46,5 +46,6 @@ This project is possible thanks to the work on the following projects:
 - [ColorPicker](http://www.eyecon.ro/colorpicker/)
 - [ColorPicker Mobile](https://github.com/Gautier/jquery-colorpicker-mobile)
 - [Simple Icons](http://simpleicons.org/)
+- [Web Font Loader](https://github.com/typekit/webfontloader)
 
 Thanks to Professor Brad Tober, and Isaac DuPree for guidance.

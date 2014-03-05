@@ -34,6 +34,9 @@
   <!-- COLOR PICKER -->
   <link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
 
+  <!-- FONT LOADER -->
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+
 </head>
 <body>
 
@@ -121,23 +124,73 @@
       </div>
 
       <div id="font-view">
-        <select id="font-picker">
-          <option selected="selected">Default font</option>
-          <option>Arial</option>
-          <option>Arial Black</option>
-          <option>Book Antiqua</option>
-          <option>Comic Sans MS</option>
-          <option>Courier New</option>
-          <option>Georgia</option>
-          <option>Helvetica</option>
-          <option>Impact</option>
-          <option>Lucida Console</option>
-          <option>Palatino Linotype</option>
-          <option>Tahoma</option>
-          <option>Times New Roman</option>
-          <option>Verdana</option>
-        </select>
         <p id="preview-text">Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
+        <div class="grid">
+          <div class="fourth">
+            <select name="Font Picker" id="font-picker">
+              <option selected="selected">Default font</option>
+              <!-- FONTS GO HERE -->
+              <option>Abril Fatface</option>
+              <option>Akronim</option>
+              <option>Arial</option>
+              <option>Arvo</option>
+              <option>Audiowide</option>
+              <option>Book Antiqua</option>
+              <option>Bubbler One</option>
+              <option>Codystar</option>
+              <option>Condiment</option>
+              <option>Courier New</option>
+              <option>Diplomata</option>
+              <option>Droid Sans</option>
+              <option>Droid Serif</option>
+              <option>Esteban</option>
+              <option>Flamenco</option>
+              <option>Freckle Face</option>
+              <option>Gafata</option>
+              <option>Germania One</option>
+              <option>Gravitas One</option>
+              <option>Hammersmith One</option>
+              <option>Helvetica</option>
+              <option>Iceland</option>
+              <option>Inconsolata</option>
+              <option>Josefin Slab</option>
+              <option>Lato</option>
+              <option>Merriweather</option>
+              <option>Merriweather Sans</option>
+              <option>Monofett</option>
+              <option>Montserrat</option>
+              <option>Old Standard TT</option>
+              <option>Open Sans</option>
+              <option>Proxima Nova</option>
+              <option>PT Sans</option>
+              <option>PT Serif</option>
+              <option>Revalia</option>
+              <option>Roboto</option>
+              <option>Sail</option>
+              <option>Sigmar One</option>
+              <option>Times New Roman</option>
+              <option>Ubuntu</option>
+              <option>Vampiro One</option>
+              <option>Verdana</option>
+              <option>Vollkorn</option>
+              <!-- FONTS STOP HERE -->
+            </select>
+          </div>
+          <div class="fourth">
+            <select name="Weight Picker" id="weight-picker">
+              <option selected="selected">Default</option>
+              <option>Bold</option>
+              <option>Italic</option>
+              <option>Bold Italic</option>
+            </select>
+          </div>
+          <div class="fourth">
+            <select name="Color Picker" id="color-picker"></select>
+          </div>
+          <div class="fourth">
+            <select name="Color Picker" id="color-picker"></select>
+          </div>
+        </div>
       </div>
     </div><!-- END CONTENT -->
 

@@ -13,7 +13,8 @@
 */
 
 // Add to remove JSHint Error about $
-/* global $:false       */
+/* global       $:false */
+/* global WebFont:false */
 
 $(document).ready(function(){
 
@@ -72,19 +73,95 @@ $('#cancel-button').click(function(){
 /*
  * FONT PICKER
  */
+$('#weight-picker').change(function() {
+  if( $(this).val() === "Bold" )
+  {
+    $('#preview-text').css({
+      'font-family':"",
+      'font-weight':"bold"
+    });
+  }
+  else if ( $(this).val() === "Italic" )
+  {
+    $('#preview-text').css({
+      'font-family':"italic",
+      'font-weight':""
+    });
+  }
+  else if ( $(this).val() === "Bold Italic")
+  {
+    $('#preview-text').css({
+      'font-family':"italic",
+      'font-weight':"bold"
+    });
+  }
+  else
+  {
+    $('#preview-text').css({
+      'font-family':"",
+      'font-weight':""
+    });
+  }
+});
+
+/*
+ * FONT PICKER
+ */
+
 $('#font-picker').change(function() {
-  if( $(this).val() === "Default font" )
+  if ( $(this).val() === "Default font" )
   {
     $('#preview-text').css('font-family',"");
   }
   else
   {
-    $('#preview-text').css('font-family',$(this).val());
+    $('#preview-text').css("font-family", $(this).val());
   }
 });
 
 /*
- * 
+ * WEB FONT LOADER : LOAD FONTS FOR THE FONT PICKER
  */
+WebFont.load({
+  google: {
+    families: ['Abril Fatface',
+               'Akronim',
+               'Arvo',
+               'Audiowide',
+               'Bubbler One',
+               'Codystar',
+               'Condiment',
+               'Diplomata',
+               'Droid Sans',
+               'Droid Serif',
+               'Esteban',
+               'Flamenco',
+               'Freckle Face',
+               'Gafata',
+               'Germania One',
+               'Gravitas One',
+               'Hammersmith One',
+               'Iceland',
+               'Inconsolata',
+               'Josefin Slab',
+               'Lato',
+               'Merriweather',
+               'Merriweather Sans',
+               'Monofett',
+               'Montserrat',
+               'Old Standard TT',
+               'Open Sans',
+               'Proxima Nova',
+               'PT Sans',
+               'PT Serif',
+               'Revalia',
+               'Roboto',
+               'Sail',
+               'Sigmar One',
+               'Ubuntu',
+               'Vampiro One',
+               'Vollkorn']
+  }
+});
 
 });

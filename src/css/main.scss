@@ -368,9 +368,8 @@ $pinterest-color  : #CB2027;
 $dribbble-color   : #EA4C89;
 
 #facebook-icon   { background-color : $facebook-color; }
-
 #googleplus-icon { background-color : $googleplus-color; }
-
 #pinterest-icon  { background-color : $pinterest-color; }
-
 #dribbble-icon   { background-color : $dribbble-color; }
+
+* { max-height: 999999px }
