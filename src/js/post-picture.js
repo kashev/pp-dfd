@@ -119,7 +119,7 @@ $('#font-picker').change(function() {
     /*
      * WEB FONT LOADER : LOAD FONTS FOR THE FONT PICKER
      */
-    if ( $.inArray($(this).val(), built_in_fonts) < 0 )
+    if ( $.inArray($(this).val(), loaded_fonts) < 0 )
     {
       WebFont.load({
         google : { families : [$(this).val()] },
