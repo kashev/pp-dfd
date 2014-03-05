@@ -71,7 +71,7 @@ $('#cancel-button').click(function(){
 });
 
 /*
- * FONT PICKER
+ * WEIGHT & STYLE PICKER
  */
 $('#weight-picker').change(function() {
   if( $(this).val() === "Bold" )
@@ -121,6 +121,7 @@ $('#font-picker').change(function() {
      */
     if ( $.inArray($(this).val(), loaded_fonts) < 0 )
     {
+      // load all variants; bold, italic, bold italic
       WebFont.load({
         google : { families : [$(this).val(),
                                $(this).val().concat("b"),
@@ -133,9 +134,17 @@ $('#font-picker').change(function() {
         }
       });
     }
-    /* Set the new font */
+    // set the new font
     $('#preview-text').css("font-family", $(this).val());
   }
 });
+
+/*
+ * SIZE PICKER
+ */
+$('#size-picker').change(function() {
+  $('#preview-text').css("font-size", $(this).val().concat("px"));
+  $('#preview-text').css("line-height", $(this).val().concat("px"));
+}); 
 
 });

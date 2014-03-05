@@ -66,10 +66,12 @@ $bello-4 : #ACCCC3;
 // default grid is 12
 .grid {
   @include outer-container;
-  .half       { @include span-columns(6); }
-  .third      { @include span-columns(4); }
-  .two-thirds { @include span-columns(8); }
-  .fourth     { @include span-columns(3); }
+  .full          { @include span-columns(12); }
+  .three-fourths { @include span-columns(9);  }
+  .half          { @include span-columns(6);  }
+  .third         { @include span-columns(4);  }
+  .two-thirds    { @include span-columns(8);  }
+  .fourth        { @include span-columns(3);  }
 }
 
 /*
@@ -228,13 +230,27 @@ strong {
 }
 
 #font-view {
-  z-index: 5;
+  // centered
+  display      : block;
+  margin-right : auto;
+  margin-left  : auto;
+  
+  // z-index : 5;
   visibility: hidden;
-  position: fixed;
-  top: 50%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto
+  width: 90%;
+  
+  top: 5%;
+  position : relative;
+
+  #previw-text {
+    position : absolute;
+    padding: 3% 0;
+    line-height: 200%;
+    max-height: 90%;
+  }
+  #size-picker {
+    width: 100%;
+  }
 }
 
 
