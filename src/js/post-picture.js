@@ -144,7 +144,7 @@ $('#font-picker').change(function() {
  */
 $('#size-picker').change(function() {
   var fsize = $(this).val().concat("px");
-  $('#size-indicator').text("Size : ".concat(fsize));
+  $('#size-indicator').text("size : ".concat(fsize));
   $('#preview-text').css("font-size", fsize);
   $('#preview-text').css("line-height", fsize);
 }); 
