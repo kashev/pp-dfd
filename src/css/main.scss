@@ -256,12 +256,15 @@ $pickerfontsize : 1.4rem;
   bottom : 20%;
   width: 90%;
 }
-#size-picker {
+#spacing-picker, #size-picker {
   width: 100%;
 }
-#size-indicator {
-  font-weight: bold;
+#spacing-indicator, #size-indicator {
   font-size: $pickerfontsize;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.1rem;
+  text-align : right;
 }
 #font-picker {
   margin: 10px 0;
@@ -271,6 +274,7 @@ $pickerfontsize : 1.4rem;
   border: 1px solid black;
   height: $pickerfontsize * 2;
   left: 0;
+  background-color: white;
 }
 #weight-picker {
   margin: 10px 0;
@@ -280,6 +284,7 @@ $pickerfontsize : 1.4rem;
   border: 1px solid black;
   height: $pickerfontsize * 2;
   right: 0;
+  background-color: white;
 }
 
 /*

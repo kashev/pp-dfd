@@ -12,9 +12,10 @@
   main.js
 */
 
-// Add to remove JSHint Error about $
+// Add to remove JSHint Error about $, etc.
 /* global       $:false */
 /* global WebFont:false */
+/* global console:false */
 
 $(document).ready(function(){
 
@@ -147,6 +148,17 @@ $('#size-picker').change(function() {
   $('#size-indicator').text("size : ".concat(fsize));
   $('#preview-text').css("font-size", fsize);
   $('#preview-text').css("line-height", fsize);
+});
+
+/*
+ * SPACING PICKER
+ */
+$('#spacing-picker').change(function() {
+  var fspace = $(this).val().concat("px");
+  console.log("fspace : ".concat(String(fspace)));
+  $('#spacing-indicator').text("space : ".concat(fspace));
+  $('#preview-text').css("letter-spacing", fspace);
 }); 
+
 
 });
