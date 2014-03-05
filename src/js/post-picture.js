@@ -107,6 +107,7 @@ $('#weight-picker').change(function() {
 /*
  * FONT PICKER
  */
+var loaded_fonts = ['Arial', 'Helvetica', 'Book Antiqua', 'Courier New', 'Times New Roman', 'Verdana'];
 
 $('#font-picker').change(function() {
   if ( $(this).val() === "Default font" )
@@ -115,52 +116,21 @@ $('#font-picker').change(function() {
   }
   else
   {
+    /*
+     * WEB FONT LOADER : LOAD FONTS FOR THE FONT PICKER
+     */
+    if ( $.inArray($(this).val(), built_in_fonts) < 0 )
+    {
+      WebFont.load({
+        google : { families : [$(this).val()] },
+        active : function () {
+          // font is now loaded
+          loaded_fonts.push($(this).val());
+        }
+      });
+    }
+    /* Set the new font */
     $('#preview-text').css("font-family", $(this).val());
-  }
-});
-
-/*
- * WEB FONT LOADER : LOAD FONTS FOR THE FONT PICKER
- */
-WebFont.load({
-  google: {
-    families: ['Abril Fatface',
-               'Akronim',
-               'Arvo',
-               'Audiowide',
-               'Bubbler One',
-               'Codystar',
-               'Condiment',
-               'Diplomata',
-               'Droid Sans',
-               'Droid Serif',
-               'Esteban',
-               'Flamenco',
-               'Freckle Face',
-               'Gafata',
-               'Germania One',
-               'Gravitas One',
-               'Hammersmith One',
-               'Iceland',
-               'Inconsolata',
-               'Josefin Slab',
-               'Lato',
-               'Merriweather',
-               'Merriweather Sans',
-               'Monofett',
-               'Montserrat',
-               'Old Standard TT',
-               'Open Sans',
-               'Proxima Nova',
-               'PT Sans',
-               'PT Serif',
-               'Revalia',
-               'Roboto',
-               'Sail',
-               'Sigmar One',
-               'Ubuntu',
-               'Vampiro One',
-               'Vollkorn']
   }
 });
 
