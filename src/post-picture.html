@@ -126,7 +126,7 @@
       <p id="preview-text">Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
       
       <div id="picker-box" class="grid">
-        <div class="half">
+        <div class="five">
           <select name="Font Picker" id="font-picker">
             <option selected="selected">Default font</option>
             <!-- FONTS GO HERE -->
@@ -176,7 +176,7 @@
             <!-- FONTS STOP HERE -->
           </select>
         </div>
-        <div class="half">
+        <div class="five">
           <select name="Weight Picker" id="weight-picker">
             <option selected="selected">Default</option>
             <option>Bold</option>
@@ -184,17 +184,26 @@
             <option>Bold Italic</option>
           </select>
         </div>
+        <div class="sixth" id="#font-color-picker">
+          
+        </div>
         <div id = "size-indicator" class="fourth">
-          size : 16px
+          <span style="font-size:1.0rem">A</span>A : 16px
         </div>
         <div class="three-fourths">
           <input id= "size-picker" type="range" name="size" min="1" max="100" value="16">
         </div>
         <div id = "spacing-indicator" class="fourth">
-          space : 0px
+          &harr; : 0px
         </div>
         <div class="three-fourths">
           <input id= "spacing-picker" type="range" name="size" min="-10" max="10" value="0" step="0.1">
+        </div>
+        <div id = "height-indicator" class="fourth">
+          &#x2195; : 0px
+        </div>
+        <div class="three-fourths">
+          <input id= "height-picker" type="range" name="size" min="0" max="100" value="16">
         </div>
       </div> <!-- END PICKER BOX -->
 

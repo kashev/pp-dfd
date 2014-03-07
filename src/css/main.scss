@@ -70,6 +70,7 @@ $bello-4 : #ACCCC3;
 .grid {
   @include outer-container;
   .full          { @include span-columns(12); }
+  .ten           { @include span-columns(10); }
   .three-fourths { @include span-columns(9);  }
   .half          { @include span-columns(6);  }
   .five          { @include span-columns(5);  }
@@ -247,6 +248,7 @@ strong {
   position: fixed;
   bottom : 5%;
   width: 100%;
+  z-index: 1;
 }
 
 /*
@@ -276,14 +278,14 @@ $pickerfontsize : 1.4rem;
   bottom : 20%;
   width: 90%;
 }
-#spacing-picker, #size-picker {
-  width: 100%;
+#spacing-picker, #size-picker, #height-picker {
+  width: 95%;
 }
-#spacing-indicator, #size-indicator {
+#spacing-indicator, #size-indicator, #height-indicator {
   font-size: $pickerfontsize;
   background-color: white;
   border: 1px solid black;
-  padding: 0.1rem;
+  padding: 0.01rem;
   text-align : center;
 }
 #font-picker, #weight-picker {

@@ -71,6 +71,11 @@ $('#cancel-button').click(function(){
   window.location = "/index.html";
 });
 
+
+/*
+ * PICKERS PICKERS PICKERS
+ *   This section sets the callbacks on all the the font picker modifying options.
+ */
 /*
  * WEIGHT & STYLE PICKER
  */
@@ -145,7 +150,7 @@ $('#font-picker').change(function() {
  */
 $('#size-picker').change(function() {
   var fsize = $(this).val().concat("px");
-  $('#size-indicator').text("size : ".concat(fsize));
+  $('#size-indicator').html('<span style="font-size:1.0rem">A</span>A : '.concat(fsize));
   $('#preview-text').css("font-size", fsize);
   $('#preview-text').css("line-height", fsize);
 });
@@ -155,10 +160,37 @@ $('#size-picker').change(function() {
  */
 $('#spacing-picker').change(function() {
   var fspace = $(this).val().concat("px");
-  console.log("fspace : ".concat(String(fspace)));
-  $('#spacing-indicator').text("space : ".concat(fspace));
+  $('#spacing-indicator').html("&harr; : ".concat(fspace));
   $('#preview-text').css("letter-spacing", fspace);
-}); 
+});
+
+/*
+ * HEIGHT PICKER
+ */
+$('#height-picker').change(function() {
+  var fspace = $(this).val().concat("px");
+  $('#height-indicator').html("&#x2195; : ".concat(fspace));
+  $('#preview-text').css("line-height", fspace);
+});
+/*
+ * FONT COLOR PICKER
+ */
+$('#font-color-picker').ColorPicker({
+  color : '#000',
+  onShow : function (colpkr) {
+    $(colpkr).fadeIn(500);
+    return false;
+  },
+  onHide : function (colpkr) {
+    $(colpkr).fadeOut(500);
+    return false;
+  },
+  onChange : function (hsb, hex, rgb) {
+    $('#preview-text').css('backgroundColor', '#' + hex);
+  }
+});
+
+
 
 
 });
