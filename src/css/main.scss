@@ -27,6 +27,9 @@ $column : 2;
 /* FRIES */
 @import "fries.holo-dark.min.css";
 
+/* ROBOTO THIN */
+@import url("http://fonts.googleapis.com/css?family=Roboto:700,400,100");
+
 /*
  * MIXINS
  */
@@ -69,9 +72,11 @@ $bello-4 : #ACCCC3;
   .full          { @include span-columns(12); }
   .three-fourths { @include span-columns(9);  }
   .half          { @include span-columns(6);  }
+  .five          { @include span-columns(5);  }
   .third         { @include span-columns(4);  }
   .two-thirds    { @include span-columns(8);  }
   .fourth        { @include span-columns(3);  }
+  .sixth         { @include span-columns(2);  }
 }
 
 /*
@@ -86,32 +91,33 @@ img {
   max-width  : 100%;
   max-height : 100%;
 }
-
-h1 {
-  font-weight: 100;
-  letter-spacing : 0.1rem;
-  font-size: 3.0rem;
-  text-align: center;
-  line-height: 3.1rem;
-}
-
-h3 {
-  font-weight: 800;
-  font-size: 2.0rem;
-  margin: 1.0rem 0;
-}
-
-h4 {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 1.8rem;
-  margin: 0.7rem 0;
-}
-
-p {
-  font-size: 1.6rem;
-  font-weight: 100;
-  text-align: justify;
+.about {
+  h1 {
+    font-weight: 100;
+    letter-spacing : 0.1rem;
+    font-size: 3.0rem;
+    text-align: center;
+    line-height: 3.1rem;
+  }
+  
+  h3 {
+    font-weight: 800;
+    font-size: 2.0rem;
+    margin: 1.0rem 0;
+  }
+  
+  h4 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0.7rem 0;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+  }
 }
 
 strong {
@@ -128,6 +134,13 @@ strong {
   margin-left  : auto;
   margin-right : auto;
   text-align   : center;
+}
+
+.verticalcenter {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
 }
 
 .under {
@@ -157,6 +170,13 @@ strong {
  */
 .homepage-button {
   font-size: 2em;
+}
+.index-button {
+  width: 95%;
+}
+.index-button-text {
+  font-size: 1.4rem;
+  @include transform(translateY(50%));
 }
 .list-title {
   text-align: left;
