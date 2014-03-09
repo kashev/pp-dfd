@@ -285,8 +285,10 @@ $pickerfontsize : 1.4rem;
   font-size: $pickerfontsize;
   background-color: white;
   border: 1px solid black;
-  padding: 0.01rem;
+  padding: 0.05rem 0;
+  margin: 0.05rem 0;
   text-align : center;
+  height: 28px;
 }
 #font-picker, #weight-picker {
   margin: 10px 0;
@@ -297,6 +299,12 @@ $pickerfontsize : 1.4rem;
   height: $pickerfontsize * 2;
   left: 0;
   background-color: white;
+}
+#font-color-picker {
+  background-color : black;
+  height: $pickerfontsize * 2;
+  position : relative;
+  @include transform(translateY(10px));
 }
 
 /*

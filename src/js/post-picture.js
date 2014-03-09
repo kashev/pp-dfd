@@ -76,6 +76,7 @@ $('#cancel-button').click(function(){
  * PICKERS PICKERS PICKERS
  *   This section sets the callbacks on all the the font picker modifying options.
  */
+
 /*
  * WEIGHT & STYLE PICKER
  */
@@ -172,6 +173,7 @@ $('#height-picker').change(function() {
   $('#height-indicator').html("&#x2195; : ".concat(fspace));
   $('#preview-text').css("line-height", fspace);
 });
+
 /*
  * FONT COLOR PICKER
  */
@@ -186,11 +188,9 @@ $('#font-color-picker').ColorPicker({
     return false;
   },
   onChange : function (hsb, hex, rgb) {
-    $('#preview-text').css('backgroundColor', '#' + hex);
+    $('#preview-text').css('color', '#' + hex);
   }
 });
-
-
 
 
 });
