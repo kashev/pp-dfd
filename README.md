@@ -15,11 +15,15 @@ pp-dfd
 # README.md
 
 ## About
+This project was designed and built for the Spring 2014 semester of Art & Design 313 - Digital Interaction Design @ The University of Illinois at Urbana-Champaign.
+
 This project is high fidelity prototype of an application designed with two imaginary users, Kevin and Erin, in mind. This application is not fully functional, nor was it intended to be. Some things work as they might in a real application, but other things don't; for instance, actually taking a picture to make a color palette isn't supported. This functionality is simulated to show what a fully functional application could look like.
 
-This application is currently live at:
+The resultant application is currently live at:
 
 - http://kashevdalmia.com/soco
+
+And is best viewed on a mobile device. Add it to your homescreen to experience it like a 'mobile web app'.
 
 This is Kevin:
 
