@@ -245,6 +245,9 @@ label.block-label {
   max-width : 80%;
   width     : 80%;
   max-height: 50%;
+  img {
+    border: solid 1px black;
+  }
 }
 
 .palette-view {
