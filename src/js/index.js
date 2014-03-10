@@ -15,6 +15,9 @@
 // Add to remove JSHint Error about $, etc.
 /* global       $:false */
 
+/*
+ * COPY PASTED FROM http://cferdinandi.github.io/slider/
+ */
 window.sliderInit = (function (window, document, undefined) {
 
     'use strict';

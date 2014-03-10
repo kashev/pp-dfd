@@ -50,18 +50,6 @@ $column : 2;
 $background-color : #FFF;
 $text-color       : #111;
 
-/* ALASKA PALETTE */
-$alaska-1 : #4F769E;
-$alaska-2 : #35372F;
-$alaska-3 : #F9F9F9;
-$alaska-4 : #67956E;
-
-/* BELLO PALETTE */
-$bello-1 : #DCBF74;
-$bello-2 : #457878;
-$bello-3 : #060606;
-$bello-4 : #ACCCC3;
-
 
 /*
  * NEAT GRID CSS
@@ -421,31 +409,61 @@ $pickerfontsize : 1.4rem;
  * ONE OFF COLOR CLASSES
  */
 
-.alaska-1 {
-  background-color : $alaska-1;
-}
-.alaska-2 {
-  background-color : $alaska-2;
-}
-.alaska-3 {
-  background-color : $alaska-3;
-}
-.alaska-4 {
-  background-color : $alaska-4;
-}
+/* ALASKA PALETTE */
+$alaska-1 : #4F769E;
+$alaska-2 : #35372F;
+$alaska-3 : #F9F9F9;
+$alaska-4 : #67956E;
 
-.bello-1 {
-  background-color : $bello-1;
-}
-.bello-2 {
-  background-color : $bello-2;
-}
-.bello-3 {
-  background-color : $bello-3;
-}
-.bello-4 {
-  background-color : $bello-4;
-}
+/* BELLO PALETTE */
+$bello-1 : #DCBF74;
+$bello-2 : #457878;
+$bello-3 : #060606;
+$bello-4 : #ACCCC3;
+
+/* STREAM PALETTE */
+$stream-1 : #D3E5FE;
+$stream-2 : #328712;
+$stream-3 : #8596A5;
+$stream-4 : #87DAFE;
+
+/* SNOW PALETTE */
+$snow-1 : #000000;
+$snow-2 : #895086;
+$snow-3 : #DBD7EE;
+$snow-4 : #313D9A;
+
+/* SUNSET PALETTE */
+$sunset-1 : #509684;
+$sunset-2 : #FFDE9E;
+$sunset-3 : #DBEEF5;
+$sunset-4 : #01A1C8;
+
+
+.alaska-1 { background-color : $alaska-1; }
+.alaska-2 { background-color : $alaska-2; }
+.alaska-3 { background-color : $alaska-3; }
+.alaska-4 { background-color : $alaska-4; }
+
+.bello-1 { background-color : $bello-1; }
+.bello-2 { background-color : $bello-2; }
+.bello-3 { background-color : $bello-3; }
+.bello-4 { background-color : $bello-4; }
+
+.stream-1 {background-color : $stream-1; }
+.stream-2 {background-color : $stream-2; }
+.stream-3 {background-color : $stream-3; }
+.stream-4 {background-color : $stream-4; }
+
+.snow-1 {background-color : $snow-1; }
+.snow-2 {background-color : $snow-2; }
+.snow-3 {background-color : $snow-3; }
+.snow-4 {background-color : $snow-4; }
+
+.sunset-1 {background-color : $sunset-1; }
+.sunset-2 {background-color : $sunset-2; }
+.sunset-3 {background-color : $sunset-3; }
+.sunset-4 {background-color : $sunset-4; }
 
 /*
  * Icon CSS For User Account Page
