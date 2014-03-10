@@ -124,7 +124,15 @@ img {
 strong {
   font-weight: bold;
 }
-
+/*
+ * FRIES OVERRIDES
+ */
+label.block-label {
+  color: $text-color;
+}
+.input-text {
+  color: $text-color;
+}
 
 /*
  * Utility Classes

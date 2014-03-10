@@ -92,9 +92,43 @@
     
     <!-- CONTENT -->
     <div class="content">
-      <h1 class="list-title">User Accounts</h1>
-    
+      <h1 class="list-title">Your Account</h1>
+      <!-- HEADSHOT -->
+      <div class="twenty-container center" id="user-picture">
+        <img class="circle" src="img/isaac.jpg" alt="Isaac, The Fake User">
+      </div>
 
+      <!-- INFO -->
+      <form class="form-flex inset">
+        <label class="block-label">Full Name</label>
+        <div class="flex-group">
+          <input type="text"
+                 name="first-name"
+                 placeholder="First Name"
+                 value="Isaac"
+                 class="input-text flex1">
+          <input type="text"
+                 name="last-name"
+                 placeholder="Last Name"
+                 value="Dupree"
+                 class="input-text flex1">
+        </div>
+        <label class="block-label">Email</label>
+        <input type="email"
+               name="email" 
+               placeholder="Email" 
+               value="isaac.dupree@gmail.com" 
+               class="input-text">
+        <label class="block-label">Password</label>
+        <input type="password" 
+               name="email" 
+               placeholder="Password" 
+               value="IsaacsPasswordWithNumbers1234" 
+               class="input-text">
+      </form>
+      <button class="btn center" id="your-account-save-changes">Save Changes</button>
+
+      <h1 class="list-title">Linked Accounts</h1>
       <div class="grid margining">
         <div class="half">
           <div class="settings-item-title push-right">
@@ -198,5 +232,6 @@
   <script src="js/lib/fries.min.js"></script>
   <!-- SoCo JS -->
   <script src="js/main.js"></script>
+  <script src="js/user.js"></script>
 </body>
 </html>

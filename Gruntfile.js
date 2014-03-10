@@ -30,7 +30,8 @@ module.exports = function(grunt) {
   var js_files   = {
     'dist/js/main.js'          : 'src/js/main.js',
     'dist/js/post-picture.js'  : 'src/js/post-picture.js',
-    'dist/js/lib/fries.min.js' : 'src/js/lib/fries.min.js'
+    'dist/js/user.js'  : 'src/js/user.js',
+    'dist/js/lib/fries.min.js' : 'src/js/lib/fries.min.js',
   };
   
   var img_copy =  {
@@ -82,7 +83,10 @@ module.exports = function(grunt) {
      *   making sure I don't write godawful JavaScript
      */
     jshint: {
-      src: ['Gruntfile.js', 'src/js/main.js', 'src/js/post-picture.js'],
+      src: ['Gruntfile.js', 
+            'src/js/main.js',
+            'src/js/post-picture.js',
+            'src/js/user.js'],
       options: {
         curly : true,
         eqeqeq : true,
