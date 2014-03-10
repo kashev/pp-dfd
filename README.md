@@ -47,5 +47,6 @@ This project is possible thanks to the work on the following projects:
 - [ColorPicker Mobile](https://github.com/Gautier/jquery-colorpicker-mobile)
 - [Simple Icons](http://simpleicons.org/)
 - [Web Font Loader](https://github.com/typekit/webfontloader)
+- [Slider](http://cferdinandi.github.io/slider/)
 
 Thanks to Professor Brad Tober, and Isaac DuPree for guidance.
