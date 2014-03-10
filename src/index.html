@@ -30,6 +30,9 @@
   <link rel="shortcut icon" href="favicon.png"/>
   <!-- CSS - Links Reset, Fries CSS -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  
+  <!-- SLIDER by Chris Ferdinandi -->
+  <link rel="stylesheet" href="css/slider-css.css">
 
   <!-- FAVICON -->
   <link rel="icon" 
@@ -99,20 +102,55 @@
     <div class="content">
 
       <h1 class="list-title">Palettes</h1>
-      <div class="single-palette margining">
-        <!-- <div class="nav left">&lt;</div> -->
-        <!-- <div class="nav right">&gt;</div> -->
-        <div class="pic center">
-          <img src="img/bello.jpg" alt="The Bello Nebula">
-        </div>
-        <div class="pal">
-          <div class="grid">
-            <div class="fourth color bello-1"></div>
-            <div class="fourth color bello-2"></div>
-            <div class="fourth color bello-3"></div>
-            <div class="fourth color bello-4"></div>
+      <div id="palettes-slider" class="slider" data-slider>
+        <div class="slides">
+          <div class="slide">
+            <div class="single-palette margining">
+              <div class="pic center">
+                <img src="img/bello.jpg" alt="The Bello Nebula">
+              </div>
+              <div class="pal">
+                <div class="grid">
+                  <div class="fourth color bello-1"></div>
+                  <div class="fourth color bello-2"></div>
+                  <div class="fourth color bello-3"></div>
+                  <div class="fourth color bello-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="single-palette margining">
+              <div class="pic center">
+                <img src="img/bello.jpg" alt="The Bello Nebula">
+              </div>
+              <div class="pal">
+                <div class="grid">
+                  <div class="fourth color bello-1"></div>
+                  <div class="fourth color bello-2"></div>
+                  <div class="fourth color bello-3"></div>
+                  <div class="fourth color bello-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="single-palette margining">
+              <div class="pic center">
+                <img src="img/bello.jpg" alt="The Bello Nebula">
+              </div>
+              <div class="pal">
+                <div class="grid">
+                  <div class="fourth color bello-1"></div>
+                  <div class="fourth color bello-2"></div>
+                  <div class="fourth color bello-3"></div>
+                  <div class="fourth color bello-4"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div data-slider-nav></div>
       </div>
       <div class="fixed-bottom">
         <h1 class="list-title">Create a New Palette</h1>
@@ -142,9 +180,20 @@
     <div class="dialogs">
       <!-- This is a requried container for your dialogs. All dialogs that you want to display in this page go here -->
     </div>
-
+  
   </div> <!-- END PAGE -->
-
+  
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <!-- Fries -->
+  <!-- Commented for Desktop; Spinners don't work for some reason. -->
+  <!--  <script src="js/lib/fries.min.js"></script> -->
+  <!-- SLIDER by Chris Ferdinandi -->
+  <script src="js/lib/slider.js"></script>
+  <!-- SoCo JS -->
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>

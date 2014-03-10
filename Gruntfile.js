@@ -23,15 +23,19 @@ module.exports = function(grunt) {
     'dist/post-picture.html' : 'src/post-picture.html'
   };
   var css_files  = {
-    'dist/css/main.css' : 'src/css/main.scss',
-    'dist/css/reset.css' : 'src/css/reset.css',
+    'dist/css/main.css'       : 'src/css/main.scss',
+    'dist/css/reset.css'      : 'src/css/reset.css',
+    'dist/css/slider-css.css' : 'src/css/slider-css.css',
     'dist/css/fries.holo-dark.min.css' : 'src/css/fries.holo-dark.min.css'
   };
   var js_files   = {
     'dist/js/main.js'          : 'src/js/main.js',
+    'dist/js/index.js'         : 'src/js/index.js',
     'dist/js/post-picture.js'  : 'src/js/post-picture.js',
     'dist/js/user.js'          : 'src/js/user.js',
     'dist/js/lib/fries.min.js' : 'src/js/lib/fries.min.js',
+    'dist/js/lib/slider.js'    : 'src/js/lib/slider.js',
+    'dist/js/lib/fluidvids.js' : 'src/js/lib/fluidvids.js'
   };
   
   var img_copy =  {
