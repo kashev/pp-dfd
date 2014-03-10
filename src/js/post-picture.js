@@ -18,6 +18,25 @@
 /* global console:false */
 /* global   fries:false */
 
+/*
+ * For some reason, some Fries components don't work on the desktop.
+ * Why this is, I can't figure out. As such, some callbacks that should
+ * be dynamically handled are instead bound statically.
+ *
+ * If I were to start this project again from scratch, I would use 
+ * Ratchet (http://goratchet.com/) instead.
+ */
+function  dialogOk () {
+  var toast = new fries.Toast({content:"Shared!"});
+  setTimeout(function(){
+    window.location = "/index.html";
+  }, 1500);
+}
+
+function dialogCancel () {
+  window.location = "/index.html";
+}
+
 $(document).ready(function(){
 
 /*
