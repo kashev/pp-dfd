@@ -29,12 +29,12 @@
 function  dialogOk () {
   var toast = new fries.Toast({content:"Shared!"});
   setTimeout(function(){
-    window.location = "/index.html";
+    window.location = "index.html";
   }, 1500);
 }
 
 function dialogCancel () {
-  window.location = "/index.html";
+  window.location = "index.html";
 }
 
 $(document).ready(function(){
@@ -88,12 +88,12 @@ $('#done-button').click(function(){
         var toast = new fries.Toast({ content: "Shared!"});
         this.hide();
         setTimeout(function(){
-          window.location = "/index.html";
+          window.location = "index.html";
         }, 1500);
       },
       callbackCancel : function() {
         this.hide();
-        window.location = "/index.html";
+        window.location = "index.html";
       }
     });
 
@@ -103,7 +103,7 @@ $('#done-button').click(function(){
 });
 
 $('#cancel-button').click(function(){
-  window.location = "/index.html";
+  window.location = "index.html";
 });
 
 
