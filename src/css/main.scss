@@ -148,6 +148,11 @@ label.block-label {
 .dialog ul.dialog-actions li a {
   font-size: 1.4rem;
 }
+.fixed-bottom {
+  position: fixed;
+  bottom : 0;
+  width: 100%;
+}
 
 /*
  * Utility Classes
