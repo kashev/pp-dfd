@@ -30,7 +30,7 @@ module.exports = function(grunt) {
   var js_files   = {
     'dist/js/main.js'          : 'src/js/main.js',
     'dist/js/post-picture.js'  : 'src/js/post-picture.js',
-    'dist/js/user.js'  : 'src/js/user.js',
+    'dist/js/user.js'          : 'src/js/user.js',
     'dist/js/lib/fries.min.js' : 'src/js/lib/fries.min.js',
   };
   

@@ -142,6 +142,12 @@ label.block-label {
 .input-text {
   color: $text-color;
 }
+.dialog-title-reigon .title {
+  margin : 1rem;
+}
+.dialog ul.dialog-actions li a {
+  font-size: 1.4rem;
+}
 
 /*
  * Utility Classes

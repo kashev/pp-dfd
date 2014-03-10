@@ -16,6 +16,7 @@
 /* global       $:false */
 /* global WebFont:false */
 /* global console:false */
+/* global   fries:false */
 
 $(document).ready(function(){
 
@@ -62,7 +63,22 @@ $('#done-button').click(function(){
   /* Set New Click Handlers */
   $('#done-button').off('click');
   $('#done-button').click(function(){
-    window.location = "/index.html";
+    var dialog = new fries.Dialog({
+      selector : '#share-dialog',
+      callbackOk : function() {
+        var toast = new fries.Toast({ content: "Shared!"});
+        this.hide();
+        setTimeout(function(){
+          window.location = "/index.html";
+        }, 1500);
+      },
+      callbackCancel : function() {
+        this.hide();
+        window.location = "/index.html";
+      }
+    });
+
+    dialog.show();
   });
 
 });
