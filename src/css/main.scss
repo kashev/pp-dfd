@@ -305,6 +305,7 @@ $pickerfontsize : 1.4rem;
   height: $pickerfontsize * 2;
   position : relative;
   @include transform(translateY(10px));
+  border: 1px solid black;
 }
 
 /*

@@ -189,6 +189,7 @@ $('#font-color-picker').ColorPicker({
   },
   onChange : function (hsb, hex, rgb) {
     $('#preview-text').css('color', '#' + hex);
+    $('#font-color-picker').css('background-color', '#' + hex);
   }
 });
 
