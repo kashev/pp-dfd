@@ -17,6 +17,10 @@ pp-dfd
 ## About
 This project is high fidelity prototype of an application designed with two imaginary users, Kevin and Erin, in mind. This application is not fully functional, nor was it intended to be. Some things work as they might in a real application, but other things don't; for instance, actually taking a picture to make a color palette isn't supported. This functionality is simulated to show what a fully functional application could look like.
 
+This application is currently live at:
+
+- http://kashevdalmia.com/soco
+
 This is Kevin:
 
 > **Kevin** is a 26 year old male who recently moved to Chicago, Illinois in October 2013 to start a new job as a designer at a design and innovation consultancy. Prior to starting his professional career, Kevin completed two graduate degrees in design—the first at one of the few universities in Canada to offer such a degree, and the second at one of the most prestigious programs in the United States. The past several years have offered Kevin the opportunity to partake in a variety of new life experiences; this is no more apparent than in the broadening of his palate, as he was previously known to be an extremely picky eater. Kevin is Canadian by birth, but also holds dual citizenship in the United States. He travels often to visit not only his own family back in Canada, but also to visit the community of his second graduate school, where he coincidentally met his long-term girlfriend. Kevin’s favorite color is red.
